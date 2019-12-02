@@ -3,7 +3,6 @@ package ch2.recursive;
 import java.util.*;
 
 public class SubsetExample {
-
     private Stack<Integer> subset = new Stack<>();
 
     public static void main(String[] args) {
