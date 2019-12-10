@@ -1,8 +1,10 @@
 package ch2.recursive;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Stack;
+import java.util.stream.Collectors;
 
 public class PermutationExample {
 
@@ -14,6 +16,7 @@ public class PermutationExample {
         List<Integer> list = Arrays.asList(1,2,3);
         ex.chosen = new boolean[list.size()];
         ex.printPermutation(list, 0);
+        new ArrayList<String>().stream().collect(Collectors.joining());
     }
 
     public void printPermutation(List<Integer> list, int index){
